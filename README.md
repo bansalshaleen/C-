@@ -1,2 +1,2 @@
 # C++
-# Solutions of Codeforces problems.
+Solutions of Codeforces problems.
