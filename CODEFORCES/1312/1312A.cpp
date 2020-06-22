@@ -25,3 +25,14 @@ typedef long double ld;
 int main()
 {
     FAST;
+    ll t;
+    cin>>t;
+    while(t--){
+    ll n,m;
+    cin>>n>>m;
+    if(n%m==0)
+    cout<<"YES"<<endl;
+    else 
+    cout<<"NO"<<endl;
+    }
+}

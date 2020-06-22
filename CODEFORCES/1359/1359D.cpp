@@ -22,28 +22,53 @@ typedef long double ld;
 #define PI 3.1415926535
 
 
+
+ll maxSubArraySum(ve<ll> a, ll size, ll mx) 
+{ 
+   ll max_so_far = 0, max_ending_here = 0; 
+   for (ll i = 0; i < size; i++) 
+   { 
+       if(a[i]<=mx)
+       max_ending_here = max_ending_here + a[i]; 
+       else
+       {
+           max_ending_here=max_ending_here-3000000;
+       }
+       
+       if (max_ending_here < 0) 
+           max_ending_here = 0; 
+  
+       /* Do not compare for all elements. Compare only    
+          when  max_ending_here > 0 */
+       else if (max_so_far < max_ending_here) 
+           max_so_far = max_ending_here; 
+   } 
+   return max_so_far; 
+} 
+
+
 int main()
 {
     FAST;
     ll n;
     cin>>n;
     ve<ll> v(n,0);
-    ll arr[61]={0};
+    ll arr[31]={0};
     for (ll i = 0; i < n; i++)
     {
         cin>>v[i];
-        arr[v[i]+30]++;
+        //arr[v[i]+30]++;
     }
-    ve<ll> pre(n+1,0);
-    for (ll i = 0; i < n+1; i++)
+    for (ll i = 1; i < 31; i++)
     {
-        pre[i]=pre[i-1]+v[i-1];
+       arr[i]= maxSubArraySum(v,n,i);
     }
-    ll pmax=-1*B, pmin1=B, pmin2=B;
-    for (ll i = 0; i < n+1; i++)
+    for (ll i = 1; i < 31; i++)
     {
-        if(pre[i]>pmax);
+        arr[i]-=i;
     }
+    
+    cout<<*max_element(arr,arr+31)<<endl;
     
 
     
