@@ -7,6 +7,15 @@
         "vector": "cpp",
         "ostream": "cpp",
         "cmath": "cpp",
-        "*.tcc": "cpp"
-    }
+        "*.tcc": "cpp",
+        "set": "cpp",
+        "algorithm": "cpp",
+        "__tree": "cpp",
+        "map": "cpp",
+        "queue": "cpp",
+        "numeric": "cpp",
+        "__split_buffer": "cpp",
+        "functional": "cpp"
+    },
+    "files.autoSave": "onFocusChange"
 }

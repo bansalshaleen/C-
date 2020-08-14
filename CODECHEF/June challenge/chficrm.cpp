@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
- 
-using namespace __gnu_pbds;
 using namespace std;
- 
 typedef   long long int ll;
 typedef unsigned long long int sll;
 typedef long double ld;
