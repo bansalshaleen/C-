@@ -47,7 +47,11 @@ ll binSearch(ve<ll> v, ll l, ll r,ll x)
 
 void solve()
 {
-    
+    ld x,y;
+    cin>>x>>y;
+    ld theta;
+    ld sm=x*y-(((ld)(PI*x*x)/4)*(1-(ld)(theta/PI)));
+
 }
 
 int main()
@@ -57,8 +61,8 @@ int main()
     freopen("../../input.txt", "r", stdin);
     freopen("../../output.txt", "w", stdout);
     #endif
-    ll t;
-    cin>>t;
+    ll t=1;
+    //cin>>t;
     while (t--)
     {
         solve();

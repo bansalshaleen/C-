@@ -10,6 +10,6 @@ int main(){
     {
         cout<<*it<<endl;
     }
-    //cout<< __gcd(12,14)<<endl;
+    
     return 0;
 }
